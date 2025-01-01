@@ -1,0 +1,14 @@
+-- Testing the database
+SELECT
+    *
+FROM
+    actor;
+
+-- Retrieve the first name and last name of customers along with the rental dates of the movies they rented.
+SELECT
+    c.first_name,
+    c.last_name,
+    r.rental_date
+FROM
+    customer c
+    JOIN rental r ON c.customer_id = r.customer_id;
